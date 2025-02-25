@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import {
   useAppKitState,
   useAppKitTheme,
-  useAppKitEvents,
   useAppKitAccount,
   useWalletInfo,
 } from "@reown/appkit/react";
@@ -16,7 +15,6 @@ export const InfoList = () => {
   const kitTheme = useAppKitTheme();
   const state = useAppKitState();
   const { address, caipAddress, isConnected, embeddedWalletInfo } = useAppKitAccount();
-  const events = useAppKitEvents();
   const walletInfo = useWalletInfo();
   const mounted = useClientMounted();
 
